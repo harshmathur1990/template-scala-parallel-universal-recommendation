@@ -2,12 +2,12 @@ name := "template-scala-parallel-universal-recommendation"
 
 version := "0.2.3"
 
-organization := "io.prediction"
+organization := "org.apache.predictionio"
 
 val mahoutVersion = "0.11.1"
 
 libraryDependencies ++= Seq(
-  "io.prediction"    %% "core" % pioVersion.value % "provided",
+  "org.apache.predictionio" %% "apache-predictionio-core" % "0.10.0-incubating" % "provided",
   "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
   "org.apache.spark" %% "spark-mllib" % "1.3.0" % "provided",
   "org.xerial.snappy" % "snappy-java" % "1.1.1.7",
